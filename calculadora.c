@@ -98,6 +98,12 @@ int main(void)
             res = raiz(num1);
             break;
         }
+
+        if (num_op == 2)
+            printf("%.2f %c %.2f = %.2f\n", num1, op, num2, res);
+        else
+            printf("%c%.2f = %.2f\n", op, num1, res);
     }
+
     return 0;
 }
