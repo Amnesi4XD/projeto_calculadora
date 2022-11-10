@@ -91,6 +91,12 @@ int main(void)
             coleta_operandos(num_op, &num1, &num2);
             res = potencia(num1, num2);
             break;
+
+         case '~':
+            num_op = 1;
+            coleta_operandos(num_op, &num1, NULL);
+            res = raiz(num1);
+            break;
         }
     }
     return 0;
