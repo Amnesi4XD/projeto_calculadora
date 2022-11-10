@@ -87,6 +87,10 @@ int main(void)
             res = divisao(num1, num2);
             break;
         
+        case '^':
+            coleta_operandos(num_op, &num1, &num2);
+            res = potencia(num1, num2);
+            break;
         }
     }
     return 0;
